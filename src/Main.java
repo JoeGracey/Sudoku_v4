@@ -14,13 +14,14 @@ public class Main {
         };
 
         printUnsolvedBoard(sudokuBoard, sudokuBoard.length);
+        printSolvedBoard(sudokuBoard, sudokuBoard.length);
     }
 
     public static void printUnsolvedBoard() {
 
     }
 
-    public static void printSolvedBoard() {
+    public static void printSolvedBoard(int[][]) {
 
     }
 }
