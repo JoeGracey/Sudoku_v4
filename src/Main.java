@@ -17,7 +17,7 @@ public class Main {
         printSolvedBoard(sudokuBoard, sudokuBoard.length);
     }
 
-    public static void printUnsolvedBoard(int[][] blah, int moreBlah) {
+    public static void printUnsolvedBoard(int[][] SudokuBoard, int moreBlah) {
         for (int i = 0; i < moreBlah; i++) {
             if ((i % 3 == 0) && (i != 0)) {
                 System.out.println("----------|unsolved|----------");
@@ -26,11 +26,11 @@ public class Main {
                 if (j % 3 == 0) {
                     System.out.print("|");
                 }
-                if(blah[i][j] == 0){
+                if(SudokuBoard[i][j] == 0){
                     System.out.print(" " + "-" + " ");
                 }
                 else {
-                    System.out.print(" " + blah[i][j] + " ");
+                    System.out.print(" " + SudokuBoard[i][j] + " ");
                 }
             }
             System.out.println("@"); // Returns to the next line
@@ -38,7 +38,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void printSolvedBoard(int[][] blah, int moreBlah) {
+    public static void printSolvedBoard(int[][] SudokuBoard, int moreBlah) {
         for (int i = 0; i < moreBlah; i++) {
             if ((i % 3 == 0) && (i != 0)) {
                 System.out.println("----------|solved|----------");
@@ -47,9 +47,9 @@ public class Main {
                 if (j % 3 == 0) {
                     System.out.print("|");
                 }
-                System.out.print(" " + blah[i][j] + " ");
+                System.out.print(" " + SudokuBoard[i][j] + " ");
             }
-            System.out.println("#");
+            System.out.println("#"); // Returns to the next line
         }
     }
 }
